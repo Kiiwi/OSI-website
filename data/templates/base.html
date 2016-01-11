@@ -1,0 +1,173 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}{% endblock %} | OSI Innebandy</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsiveslides.css' %}" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">OSI Innebandy</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="">
+                    <a href="{% url 'D1' %}">Damer 1</a>
+                </li>
+                <li class="">
+                    <a href="{% url 'D2' %}">Damer 2</a>
+                </li>
+                <li class="">
+                    <a href="{% url 'H1' %}">Herrer 1</a>
+                </li>
+                <li class="">
+                    <a href="{% url 'H2' %}">Herrer 2</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Content block -->
+{% block content %}
+{% endblock %}
+
+
+
+
+<!-- Footer -->
+<div class="above-footer">
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4>
+                    <strong>OSI Innebandy</strong>
+                </h4>
+
+                <p>Trimveien 4<br>Oslo</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i>452 76 177</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a
+                            href="mailto:innebandy@osi.no">innebandy@osi.no</a>
+                    </li>
+                </ul>
+                <br>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.facebook.com/osi.innebandy"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                    </li>
+                </ul>
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; www.osi-innebandy.no 2015</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll visible-xs visible-sm">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+
+<!-- jQuery -->
+<script src="{% static 'js/jquery.js' %}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="{% static 'js/classie.js' %}"></script>
+<script src="{% static 'js/cbpAnimatedHeader.js' %}"></script>
+<script src="{% static 'js/responsiveslides.min.js' %}"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{% static 'js/main.js' %}"></script>
+
+<!-- Slider -->
+<script>
+    $(function () {
+        $(".rslides").responsiveSlides();
+    });
+
+    $(".rslides").responsiveSlides({
+        auto: true,             // Boolean: Animate automatically, true or false
+        speed: 500,            // Integer: Speed of the transition, in milliseconds
+        timeout: 6000,          // Integer: Time between slide transitions, in milliseconds
+        pager: false,           // Boolean: Show pager, true or false
+        nav: false,             // Boolean: Show navigation, true or false
+        random: false,          // Boolean: Randomize the order of the slides, true or false
+        pause: false,           // Boolean: Pause on hover, true or false
+        pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+        prevText: "Previous",   // String: Text for the "previous" button
+        nextText: "Next",       // String: Text for the "next" button
+        maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+        navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+        manualControls: "",     // Selector: Declare custom pager navigation
+        namespace: "rslides",   // String: Change the default namespace used
+        before: function () {
+        },   // Function: Before callback
+        after: function () {
+        }     // Function: After callback
+    });
+</script>
+
+</body>
+
+</html>

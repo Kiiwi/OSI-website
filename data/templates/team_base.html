@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}{{ team }}{% endblock %}
+
+{% block content %}
+
+
+    <div style="height: 100px"></div>
+    <div class="container">
+        <div>
+            <h1>{{ team }}</h1>
+        </div>
+        <!-- Player table -->
+        <div class="col-xs-12 col-md-8">
+
+            <h2>Spillere</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Fornavn</th>
+                        <th>Etternavn</th>
+                        <th>Draktnummer</th>
+                        <th>Posisjon</th>
+                        <th>Mål</th>
+                        <th>Assist</th>
+                        <th>Utvisning</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for player in players %}
+                        <tr>
+                            <td>{{ player.first_name }}</td>
+                            <td>{{ player.last_name }}</td>
+                            {% if player.shirt_number == None %}
+                                <td>-</td>
+                            {% else %}
+                                <td>{{ player.shirt_number }}</td>
+                            {% endif %}
+                            <td>{{ player.position }}</td>
+                            <td>{{ player.total_goals }}</td>
+                            <td>{{ player.total_assists }}</td>
+                            <td>{{ player.total_penalty }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- Match table -->
+        <div class="col-xs-12 col-md-8">
+
+            <h2>Kommende kamper</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Hjemmelag</th>
+                        <th>Bortelag</th>
+                        <th>Sted</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for match in matches %}
+                        {% if match.is_past_due %}
+                            <tr>
+                                <td>{{ match.date|date:"d/m/Y G:i" }}</td>
+                                <td>{{ match.home_team }}</td>
+                                <td>{{ match.away_team }}</td>
+                                <td>{{ match.venue.name }}</td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- Result table -->
+        <div class="col-xs-12 col-md-8">
+
+            <h2>Resultater</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Kamp</th>
+                        <th>Hjemmelag</th>
+                        <th>Bortelag</th>
+                        <th>Sted</th>
+                        <th>Dato</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for result in results %}
+                        <tr>
+                            <td>{{ result.match }}</td>
+                            <td>{{ result.score_hometeam }}</td>
+                            <td>{{ result.score_awayteam }}</td>
+                            <td>{{ result.match.venue.name }}</td>
+                            <td>{{ result.match.date|date:"d/m/Y G:i" }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h2>Trener</h2>
+            {% for coach in coach %}
+                <div id="trener-info">
+                    <h3>{{ coach.name }}</h3>
+
+                    <p><strong>Tlf:</strong>: {{ coach.phone }}</p>
+
+                    <p><strong>E-post</strong> <a href="mailto:{{ coach.email }}">{{ coach.email }}</a></p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

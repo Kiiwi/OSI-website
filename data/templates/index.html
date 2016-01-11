@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Header -->
+    <header>
+        <div class="slider">
+            <ul class="rslides">
+                <li><img src="{% static 'img/slider_test3.png' %}" alt=""></li>
+                <li><img src="{% static 'img/slider_test4.png' %}" alt=""></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- About Grid Section -->
+    <section id="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4>Om oss</h4>
+
+                    <p>
+                        Vi tar i mot studenter på alle ferdighetsnivåer. Vi søker både gutter og jenter som har lyst til
+                        å spille innebandy! Ta kontakt!<br> Vi ønsker nye spillere på alle nivåer velkommen og kan tilby
+                        gode treningsforhold både for herrer og damer.
+                        Alle som trener med OSI på Blindern Athletica / Domus Athletica må kjøpe adgangskort til
+                        Studentidrettens treningssentre. Dette gir full adgang til treningsstudio, aktivitetssaler,
+                        svømmehall og mange andre treningstilbud, og koster kun 900,- for 6 mnd (studenter ved
+                        UiO/HiOA/NMH / NVH / AHO / KHiO).
+                        Lyst å begynne? Vil du har mer informasjon? Kontakt oss på <a
+                            href="https://facebook.com/osi.innebandy">facebook</a>, eller send mail til
+                        <a href="mailto:innebandy@osi.no">innebandy@osi.no</a><br>
+                        <br>
+                    <h4>Lag sesong 2015/16:</h4>
+                    <ul class="list-unstyled">
+                        <li>OSI Herrer 1: 2. divisjon</li>
+                        <li>OSI Herrer 2: 3. divisjon</li>
+                        <li>OSI Damer 1: 2. divisjon</li>
+                        <li>OSI Damer 2: 3. divisjon</li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="success" id="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Våre Treningstider</h3>
+                    <h4>Damer</h4>
+                    <ul class="list-unstyled">
+                        <li>onsdag 20.30 - 22.00 <a
+                                href="https://www.google.no/maps/place/Idrettsbygningen,+Universitetet+i+Oslo,+0313+Oslo/@59.940942,10.7222776,19z/data=!3m1!4b1!4m2!3m1!1s0x46416de6fb598cff:0xcbdccba7207d987d"
+                                target="_blank">Blindern Athletica</a></li>
+                        <li>torsdag 19.15 - 20.30 <a
+                                href="https://www.google.no/maps/place/Anna+Sethnes+hus+-+H%C3%B8gskolen+i+Oslo+og+Akershus+(HiOA)/@59.9226789,10.7333428,18z/data=!4m6!1m3!3m2!1s0x46416e796cb90cf1:0x99e77f4a1223c3f9!2sH%C3%B8gskolen+i+Oslo!3m1!1s0x0:0x8fa79d1a9ca604ab"
+                                target="_blank">HiOA-hallen</a></li>
+                    </ul>
+                    <h4>Herrer</h4>
+                    <ul class="list-unstyled">
+                        <li>mandag 17.30 - 19.00 <a
+                                href="https://www.google.no/maps/place/Athletica+Domus/@59.947404,10.721922,17z/data=!4m6!1m3!3m2!1s0x0:0x1467aea8301915d6!2sDomus+Athletica!3m1!1s0x0:0x564c4a10cd4f0221"
+                                target="_blank">Domus Athletica</a></li>
+                        <li>torsdag 18.00 - 19.15 <a
+                                href="https://www.google.no/maps/place/Anna+Sethnes+hus+-+H%C3%B8gskolen+i+Oslo+og+Akershus+(HiOA)/@59.9226789,10.7333428,18z/data=!4m6!1m3!3m2!1s0x46416e796cb90cf1:0x99e77f4a1223c3f9!2sH%C3%B8gskolen+i+Oslo!3m1!1s0x0:0x8fa79d1a9ca604ab"
+                                target="_blank">HiOA-hallen</a></li>
+                    </ul>
+                    <h4>Nybegynner/Felles</h4>
+                    <ul class="list-unstyled">
+                        <li>mandag 16.00 - 17.30 <a
+                                href="https://www.google.no/maps/place/Athletica+Domus/@59.947404,10.721922,17z/data=!4m6!1m3!3m2!1s0x0:0x1467aea8301915d6!2sDomus+Athletica!3m1!1s0x0:0x564c4a10cd4f0221"
+                                target="_blank">Domus Athletica</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
