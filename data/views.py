@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.views.generic import ListView
 from django.db.models import Q
-from django.shortcuts import render_to_response, RequestContext
+from django.shortcuts import render_to_response, RequestContext, render
 
 from .models import Player
 from .models import Match
@@ -12,6 +12,10 @@ from .models import Coach
 def home(request):
     return render_to_response("index.html", locals(),
                               context_instance=RequestContext(request))
+
+
+def home_files(request, filename):
+    return render(request, filename, {}, content_type="text/plain")
 
 
 class D1(ListView):

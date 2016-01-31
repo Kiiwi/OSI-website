@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="author" href="humans.txt"/>
 
-    <title>{% block title %}{% endblock %} | OSI Innebandy</title>
+    <title>{% block title %}{% endblock %} | OSI {% trans 'Innebandy' %}</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -19,7 +21,6 @@
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsiveslides.css' %}" rel="stylesheet">
 
-
     <!-- Custom Fonts -->
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -27,11 +28,31 @@
           type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Favoicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/favicons/apple-touch-icon-57x57.png?v=Gvvg6BBzyL'%}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/favicons/apple-touch-icon-60x60.png?v=Gvvg6BBzyL' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/favicons/apple-touch-icon-72x72.png?v=Gvvg6BBzyL' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/favicons/apple-touch-icon-76x76.png?v=Gvvg6BBzyL' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/favicons/apple-touch-icon-114x114.png?v=Gvvg6BBzyL' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/favicons/apple-touch-icon-120x120.png?v=Gvvg6BBzyL' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/favicons/apple-touch-icon-144x144.png?v=Gvvg6BBzyL' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/favicons/apple-touch-icon-152x152.png?v=Gvvg6BBzyL' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicons/apple-touch-icon-180x180.png?v=Gvvg6BBzyL' %}">
+    <link rel="icon" type="image/png" href="{% static 'img/favicons/favicon-32x32.png?v=Gvvg6BBzyL' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static 'img/favicons/android-chrome-192x192.png?v=Gvvg6BBzyL' %}" sizes="192x192">
+    <link rel="icon" type="image/png" href="{% static 'img/favicons/favicon-96x96.png?v=Gvvg6BBzyL' %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% static 'img/favicons/favicon-16x16.png?v=Gvvg6BBzyL' %}" sizes="16x16">
+    <link rel="manifest" href="{% static 'img/favicons/manifest.json?v=Gvvg6BBzyL' %}">
+    <link rel="mask-icon" href="{% static 'img/favicons/safari-pinned-tab.svg?v=Gvvg6BBzyL' %}" color="#d61a00">
+    <link rel="shortcut icon" href="{% static 'img/favicons/favicon.ico?v=Gvvg6BBzyL' %}">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-TileImage" content="{% static 'img/favicons/mstile-144x144.png?v=Gvvg6BBzyL' %}">
+    <meta name="theme-color" content="#d61a00">
 
 </head>
 
@@ -49,7 +70,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{% url 'home' %}">OSI Innebandy</a>
+            <a class="navbar-brand" href="{% url 'home' %}">OSI {% trans 'Innebandy' %}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,16 +80,33 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="">
-                    <a href="{% url 'D1' %}">Damer 1</a>
+                    <a href="{% url 'D1' %}">{% trans 'Damer 1' %}</a>
                 </li>
                 <li class="">
-                    <a href="{% url 'D2' %}">Damer 2</a>
+                    <a href="{% url 'D2' %}">{% trans 'Damer 2' %}</a>
                 </li>
                 <li class="">
-                    <a href="{% url 'H1' %}">Herrer 1</a>
+                    <a href="{% url 'H1' %}">{% trans 'Herrer 1' %}</a>
                 </li>
                 <li class="">
-                    <a href="{% url 'H2' %}">Herrer 2</a>
+                    <a href="{% url 'H2' %}">{% trans 'Herrer 2' %}</a>
+                </li>
+                <li class="">
+                    <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}"/>
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% if LANGUAGE_CODE == 'en' %}
+                            <input name="language" type="hidden" value="nb"/>
+                            <input class="flag" type="image" src="{% static 'img/Flags/Flag_of_Norway.svg' %}"
+                                   value="norsk" alt="Norsk"/>
+                        {% else %}
+                            <input name="language" type="hidden" value="en"/>
+                            <input class="flag" type="image"
+                                   src="{% static 'img/Flags/Flag_of_the_United_Kingdom.svg' %}" value="english"
+                                   alt="English"/>
+                        {% endif %}
+                    </form>
                 </li>
             </ul>
         </div>
@@ -92,7 +130,7 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h4>
-                    <strong>OSI Innebandy</strong>
+                    <strong>OSI {% trans 'Innebandy' %}</strong>
                 </h4>
 
                 <p>

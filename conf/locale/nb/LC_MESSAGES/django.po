@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-28 01:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\OSI\settings.py:16
+msgid "English"
+msgstr "Engelsk"
+
+#: .\OSI\settings.py:17
+msgid "Norwegian"
+msgstr "Norsk"
+
+#: .\data\templates\404.html:6 .\data\templates\404.html.py:58
+msgid "Siden Finnes Ikke"
+msgstr ""
+
+#: .\data\templates\404.html:59
+msgid "Beklager, men siden du leter etter eksisterer ikke"
+msgstr ""
+
+#: .\data\templates\base.html:15 .\data\templates\base.html.py:54
+#: .\data\templates\base.html:111
+msgid "Innebandy"
+msgstr ""
+
+#: .\data\templates\base.html:64
+msgid "Damer 1"
+msgstr ""
+
+#: .\data\templates\base.html:67
+msgid "Damer 2"
+msgstr ""
+
+#: .\data\templates\base.html:70
+msgid "Herrer 1"
+msgstr ""
+
+#: .\data\templates\base.html:73
+msgid "Herrer 2"
+msgstr ""
+
+#: .\data\templates\index.html:5
+msgid "Hjem"
+msgstr ""
+
+#: .\data\templates\index.html:39
+msgid "Om oss"
+msgstr ""
+
+#: .\data\templates\index.html:41
+msgid ""
+"\n"
+"                        Vi tar i mot studenter på alle ferdighetsnivåer. Vi "
+"søker både gutter og jenter som har lyst til\n"
+"                        å spille innebandy! Ta kontakt!<br> Vi ønsker nye "
+"spillere på alle nivåer velkommen og kan tilby\n"
+"                        gode treningsforhold både for herrer og damer.\n"
+"                        Alle som trener med OSI på Blindern Athletica / "
+"Domus Athletica må kjøpe adgangskort til\n"
+"                        Studentidrettens treningssentre. Dette gir full "
+"adgang til treningsstudio, aktivitetssaler,\n"
+"                        svømmehall og mange andre treningstilbud, og koster "
+"kun 900,- for 6 mnd (studenter ved\n"
+"                        UiO/HiOA/NMH / NVH / AHO / KHiO).\n"
+"                        Lyst å begynne? Vil du har mer informasjon? Kontakt "
+"oss på <a\n"
+"                                href=\"https://facebook.com/osi.innebandy"
+"\">facebook</a>, eller send mail til\n"
+"                        <a href=\"mailto:innebandy@osi.no\">innebandy@osi."
+"no</a><br>\n"
+"                        <br>\n"
+"                    "
+msgstr ""
+
+#: .\data\templates\index.html:55
+msgid "Lag 2015/16-sesongen:"
+msgstr ""
+
+#: .\data\templates\index.html:57
+msgid ""
+"\n"
+"                            <li>OSI Herrer 1: 2. divisjon</li>\n"
+"                            <li>OSI Herrer 2: 3. divisjon</li>\n"
+"                            <li>OSI Damer 1: 2. divisjon</li>\n"
+"                            <li>OSI Damer 2: 3. divisjon</li>\n"
+"                        "
+msgstr ""
+
+#: .\data\templates\index.html:75
+msgid "Våre Treningstider"
+msgstr ""
+
+#: .\data\templates\index.html:76
+msgid "Damer"
+msgstr ""
+
+#: .\data\templates\index.html:78
+msgid "onsdag"
+msgstr ""
+
+#: .\data\templates\index.html:81 .\data\templates\index.html.py:90
+msgid "torsdag"
+msgstr ""
+
+#: .\data\templates\index.html:85
+msgid "Herrer"
+msgstr ""
+
+#: .\data\templates\index.html:87 .\data\templates\index.html.py:96
+msgid "mandag"
+msgstr ""
+
+#: .\data\templates\index.html:94
+msgid "Nybegynner/Felles"
+msgstr ""
+
+#: .\data\templates\team_base.html:18
+msgid "Spillere"
+msgstr ""
+
+#: .\data\templates\team_base.html:24
+msgid "Fornavn"
+msgstr ""
+
+#: .\data\templates\team_base.html:25
+msgid "Etternavn"
+msgstr ""
+
+#: .\data\templates\team_base.html:26
+msgid "Draktnummer"
+msgstr ""
+
+#: .\data\templates\team_base.html:27
+msgid "Posisjon"
+msgstr ""
+
+#: .\data\templates\team_base.html:28
+msgid "Mål"
+msgstr ""
+
+#: .\data\templates\team_base.html:29
+msgid "Assist"
+msgstr ""
+
+#: .\data\templates\team_base.html:30
+msgid "Utvisning"
+msgstr ""
+
+#: .\data\templates\team_base.html:58
+msgid "Kommende kamper"
+msgstr ""
+
+#: .\data\templates\team_base.html:64 .\data\templates\team_base.html.py:100
+msgid "Dato"
+msgstr ""
+
+#: .\data\templates\team_base.html:65 .\data\templates\team_base.html.py:97
+msgid "Hjemmelag"
+msgstr ""
+
+#: .\data\templates\team_base.html:66 .\data\templates\team_base.html.py:98
+msgid "Bortelag"
+msgstr ""
+
+#: .\data\templates\team_base.html:67 .\data\templates\team_base.html.py:99
+msgid "Sted"
+msgstr ""
+
+#: .\data\templates\team_base.html:90
+msgid "Resultater"
+msgstr ""
+
+#: .\data\templates\team_base.html:96
+msgid "Kamp"
+msgstr ""
+
+#: .\data\templates\team_base.html:119
+msgid "Trener"
+msgstr ""
+
+#: .\data\templates\team_base.html:124
+msgid "Tlf"
+msgstr ""
+
+#: .\data\templates\team_base.html:126
+msgid "E-post"
+msgstr ""

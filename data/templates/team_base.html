@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% load i18n %}
 
 {% block title %}{{ team }}{% endblock %}
 
@@ -8,25 +9,25 @@
 
     <div style="height: 100px"></div>
     <div class="container">
-        <div>
+        <div class="col-xs-12 col-md-8">
             <h1>{{ team }}</h1>
         </div>
         <!-- Player table -->
         <div class="col-xs-12 col-md-8">
 
-            <h2>Spillere</h2>
+            <h2>{% trans 'Spillere' %}</h2>
 
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Fornavn</th>
-                        <th>Etternavn</th>
-                        <th>Draktnummer</th>
-                        <th>Posisjon</th>
-                        <th>Mål</th>
-                        <th>Assist</th>
-                        <th>Utvisning</th>
+                        <th>{% trans 'Fornavn' %}</th>
+                        <th>{% trans 'Etternavn' %}</th>
+                        <th>{% trans 'Draktnummer' %}</th>
+                        <th>{% trans 'Posisjon' %}</th>
+                        <th>{% trans 'Mål' %}</th>
+                        <th>{% trans 'Assist' %}</th>
+                        <th>{% trans 'Utvisning' %}</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -54,16 +55,16 @@
         <!-- Match table -->
         <div class="col-xs-12 col-md-8">
 
-            <h2>Kommende kamper</h2>
+            <h2>{% trans 'Kommende kamper' %}</h2>
 
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Dato</th>
-                        <th>Hjemmelag</th>
-                        <th>Bortelag</th>
-                        <th>Sted</th>
+                        <th>{% trans 'Dato' %}</th>
+                        <th>{% trans 'Hjemmelag' %}</th>
+                        <th>{% trans 'Bortelag' %}</th>
+                        <th>{% trans 'Sted' %}</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -86,17 +87,17 @@
         <!-- Result table -->
         <div class="col-xs-12 col-md-8">
 
-            <h2>Resultater</h2>
+            <h2>{% trans 'Resultater' %}</h2>
 
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Kamp</th>
-                        <th>Hjemmelag</th>
-                        <th>Bortelag</th>
-                        <th>Sted</th>
-                        <th>Dato</th>
+                        <th>{% trans 'Kamp' %}</th>
+                        <th>{% trans 'Hjemmelag' %}</th>
+                        <th>{% trans 'Bortelag' %}</th>
+                        <th>{% trans 'Sted' %}</th>
+                        <th>{% trans 'Dato' %}</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -115,14 +116,14 @@
 
         </div>
         <div class="col-xs-6 col-md-4">
-            <h2>Trener</h2>
+            <h2>{% trans 'Trener' %}</h2>
             {% for coach in coach %}
                 <div id="trener-info">
                     <h3>{{ coach.name }}</h3>
 
-                    <p><strong>Tlf:</strong>: {{ coach.phone }}</p>
+                    <p><strong>{% trans 'Tlf' %}:</strong>: {{ coach.phone }}</p>
 
-                    <p><strong>E-post</strong> <a href="mailto:{{ coach.email }}">{{ coach.email }}</a></p>
+                    <p><strong>{% trans 'E-post' %}</strong> <a href="mailto:{{ coach.email }}">{{ coach.email }}</a></p>
                 </div>
             {% endfor %}
         </div>

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /d1/
+Disallow: /d2/
+Disallow: /h1/
+Disallow: /h2/
