@@ -27,11 +27,11 @@ msgstr "Norsk"
 
 #: .\data\templates\404.html:6 .\data\templates\404.html.py:58
 msgid "Siden Finnes Ikke"
-msgstr ""
+msgstr "Page does not exist"
 
 #: .\data\templates\404.html:59
 msgid "Beklager, men siden du leter etter eksisterer ikke"
-msgstr ""
+msgstr "Sorry, but the page you are looking for does not exist"
 
 #: .\data\templates\base.html:15 .\data\templates\base.html.py:54
 #: .\data\templates\base.html:111
