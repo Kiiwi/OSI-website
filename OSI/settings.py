@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 import os
 from django.utils.translation import ugettext_lazy as _
-# import dj_database_url
+import dj_database_url
 
 LANGUAGES = (
     ('en', _('English')),
