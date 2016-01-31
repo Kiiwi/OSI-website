@@ -119,3 +119,6 @@ class Coach(models.Model):
 
     class Meta:
         verbose_name_plural = "Trenere"
+
+    def __str__(self):
+        return smart_str(self.team) + ' ' + smart_str(self.name)
