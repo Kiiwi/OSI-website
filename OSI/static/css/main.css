@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #d61a00;
+    color: #AB1500;
 }
 
 h1,
@@ -181,7 +181,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #d61a00;
+    background: #AB1500;
 }
 
 section.success a,
@@ -467,7 +467,7 @@ footer .footer-below {
 }
 
 .navbar-default {
-    background-color: #D61A00;
+    background-color: #AB1500;
 }
 
 .above-footer {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-28 01:07+0100\n"
+"POT-Creation-Date: 2016-03-22 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\OSI\settings.py:16
+#: .\OSI\settings.py:17
 msgid "English"
 msgstr "Engelsk"
 
-#: .\OSI\settings.py:17
+#: .\OSI\settings.py:18
 msgid "Norwegian"
 msgstr "Norsk"
 
@@ -33,24 +33,24 @@ msgstr "Page does not exist"
 msgid "Beklager, men siden du leter etter eksisterer ikke"
 msgstr "Sorry, but the page you are looking for does not exist"
 
-#: .\data\templates\base.html:15 .\data\templates\base.html.py:54
-#: .\data\templates\base.html:111
+#: .\data\templates\base.html:36 .\data\templates\base.html.py:104
+#: .\data\templates\base.html:164
 msgid "Innebandy"
 msgstr "Floorball"
 
-#: .\data\templates\base.html:64
+#: .\data\templates\base.html:114
 msgid "Damer 1"
 msgstr "Ladies 1"
 
-#: .\data\templates\base.html:67
+#: .\data\templates\base.html:117
 msgid "Damer 2"
 msgstr "Ladies 2"
 
-#: .\data\templates\base.html:70
+#: .\data\templates\base.html:120
 msgid "Herrer 1"
 msgstr "Men 1"
 
-#: .\data\templates\base.html:73
+#: .\data\templates\base.html:123
 msgid "Herrer 2"
 msgstr "Men 2"
 
@@ -58,11 +58,11 @@ msgstr "Men 2"
 msgid "Hjem"
 msgstr "Home"
 
-#: .\data\templates\index.html:39
+#: .\data\templates\index.html:29
 msgid "Om oss"
 msgstr "About us"
 
-#: .\data\templates\index.html:41
+#: .\data\templates\index.html:31
 msgid ""
 "\n"
 "                        Vi tar i mot studenter på alle ferdighetsnivåer. Vi "
@@ -108,11 +108,19 @@ msgstr ""
 "                        <br>\n"
 "                        "
 
-#: .\data\templates\index.html:55
+#: .\data\templates\index.html:45
 msgid "Lag 2015/16-sesongen:"
 msgstr "Teams 2015/16 season:"
 
-#: .\data\templates\index.html:57
+#: .\data\templates\index.html:47
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                            <li>OSI Herrer 1: 2nd divisjon</li>\n"
+#| "                            <li>OSI Herrer 2: 3rd divisjon</li>\n"
+#| "                            <li>OSI Damer 1: 2nd divisjon</li>\n"
+#| "                            <li>OSI Damer 2: 3rd divisjon</li>\n"
+#| "                        "
 msgid ""
 "\n"
 "                            <li>OSI Herrer 1: 2. divisjon</li>\n"
@@ -128,31 +136,31 @@ msgstr ""
 "                        <li>OSI Ladies 2: 3. division</li>\n"
 "                        "
 
-#: .\data\templates\index.html:75
+#: .\data\templates\index.html:65
 msgid "Våre Treningstider"
 msgstr "Our Training Hours"
 
-#: .\data\templates\index.html:76
+#: .\data\templates\index.html:66
 msgid "Damer"
 msgstr "Ladies"
 
-#: .\data\templates\index.html:78
+#: .\data\templates\index.html:68
 msgid "onsdag"
 msgstr "wednesday"
 
-#: .\data\templates\index.html:81 .\data\templates\index.html.py:90
+#: .\data\templates\index.html:71 .\data\templates\index.html.py:80
 msgid "torsdag"
 msgstr "thursday"
 
-#: .\data\templates\index.html:85
+#: .\data\templates\index.html:75
 msgid "Herrer"
 msgstr "Men"
 
-#: .\data\templates\index.html:87 .\data\templates\index.html.py:96
+#: .\data\templates\index.html:77 .\data\templates\index.html.py:86
 msgid "mandag"
 msgstr "monday"
 
-#: .\data\templates\index.html:94
+#: .\data\templates\index.html:84
 msgid "Nybegynner/Felles"
 msgstr "Novice/Shared"
 

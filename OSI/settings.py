@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 import os
 from django.utils.translation import ugettext_lazy as _
-import dj_database_url
+#import dj_database_url
 
 LANGUAGES = (
     ('en', _('English')),
@@ -30,9 +30,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = "f=8h2*&pvzpr%54(unl7pk12z87$p@$gkg6*y*!j%!ew4$tx5q"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 
 # Application definition
@@ -103,10 +103,10 @@ USE_TZ = True
 
 
 # Parse database configuration from $DATABASE_URL
-DATABASES['default'] = dj_database_url.config()
+#DATABASES['default'] = dj_database_url.config()
 
 # Enable Connection Pooling (if desired)
-DATABASES['default']['ENGINE'] = 'django_postgrespool'
+#DATABASES['default']['ENGINE'] = 'django_postgrespool'
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

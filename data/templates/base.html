@@ -41,6 +41,8 @@
     <!-- Custom CSS -->
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsiveslides.css' %}" rel="stylesheet">
+    <link href="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css"
+          rel="stylesheet"/>
 
     <!-- Custom Fonts -->
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
@@ -207,6 +209,8 @@
 <script src="{% static 'js/classie.js' %}"></script>
 <script src="{% static 'js/cbpAnimatedHeader.js' %}"></script>
 <script src="{% static 'js/responsiveslides.min.js' %}"></script>
+<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="{% static 'js/main.js' %}"></script>
@@ -236,6 +240,19 @@
         },   // Function: Before callback
         after: function () {
         }     // Function: After callback
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.table').DataTable({
+            "paging": false,
+            "ordering": true,
+            "info": false,
+            "searching": false,
+            "language": {
+                "emptyTable": " "
+            }
+        });
     });
 </script>
 
