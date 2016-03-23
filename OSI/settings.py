@@ -31,9 +31,9 @@ SECRET_KEY = "f=8h2*&pvzpr%54(unl7pk12z87$p@$gkg6*y*!j%!ew4$tx5q"
 #SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 
 # Application definition
