@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-22 22:29+0100\n"
+"POT-Creation-Date: 2016-09-11 21:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,25 +33,17 @@ msgstr ""
 msgid "Beklager, men siden du leter etter eksisterer ikke"
 msgstr ""
 
-#: .\data\templates\base.html:36 .\data\templates\base.html.py:104
-#: .\data\templates\base.html:164
+#: .\data\templates\base.html:36 .\data\templates\base.html.py:106
+#: .\data\templates\base.html:160
 msgid "Innebandy"
 msgstr ""
 
-#: .\data\templates\base.html:114
+#: .\data\templates\base.html:116
 msgid "Damer 1"
 msgstr ""
 
-#: .\data\templates\base.html:117
-msgid "Damer 2"
-msgstr ""
-
-#: .\data\templates\base.html:120
+#: .\data\templates\base.html:119
 msgid "Herrer 1"
-msgstr ""
-
-#: .\data\templates\base.html:123
-msgid "Herrer 2"
 msgstr ""
 
 #: .\data\templates\index.html:5
@@ -88,44 +80,42 @@ msgid ""
 msgstr ""
 
 #: .\data\templates\index.html:45
-msgid "Lag 2015/16-sesongen:"
+msgid "Lag 2016/17-sesongen:"
 msgstr ""
 
 #: .\data\templates\index.html:47
 msgid ""
 "\n"
-"                            <li>OSI Herrer 1: 2. divisjon</li>\n"
-"                            <li>OSI Herrer 2: 3. divisjon</li>\n"
+"                            <li>OSI Herrer 1: 3. divisjon</li>\n"
 "                            <li>OSI Damer 1: 2. divisjon</li>\n"
-"                            <li>OSI Damer 2: 3. divisjon</li>\n"
 "                        "
 msgstr ""
 
-#: .\data\templates\index.html:65
+#: .\data\templates\index.html:63
 msgid "Våre Treningstider"
 msgstr ""
 
-#: .\data\templates\index.html:66
+#: .\data\templates\index.html:64
 msgid "Damer"
 msgstr ""
 
-#: .\data\templates\index.html:68
-msgid "onsdag"
-msgstr ""
-
-#: .\data\templates\index.html:71 .\data\templates\index.html.py:80
-msgid "torsdag"
-msgstr ""
-
-#: .\data\templates\index.html:75
-msgid "Herrer"
-msgstr ""
-
-#: .\data\templates\index.html:77 .\data\templates\index.html.py:86
+#: .\data\templates\index.html:66 .\data\templates\index.html.py:84
 msgid "mandag"
 msgstr ""
 
-#: .\data\templates\index.html:84
+#: .\data\templates\index.html:69 .\data\templates\index.html.py:78
+msgid "torsdag"
+msgstr ""
+
+#: .\data\templates\index.html:73
+msgid "Herrer"
+msgstr ""
+
+#: .\data\templates\index.html:75
+msgid "onsdag"
+msgstr ""
+
+#: .\data\templates\index.html:82
 msgid "Nybegynner/Felles"
 msgstr ""
 
