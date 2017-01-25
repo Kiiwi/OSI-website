@@ -1,0 +1,16 @@
+[11/Sep/2016 21:02:21] WARNING [django.request:170] Not Found: /static/css/bootstrap.min.css
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/css/main.css
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/css/responsiveslides.css
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/font-awesome/css/font-awesome.min.css
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/js/jquery.js
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/img/Flags/Flag_of_the_United_Kingdom.svg
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/img/slider1_nor.png
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/img/slider2_nor.png
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/js/bootstrap.min.js
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/js/classie.js
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/js/cbpAnimatedHeader.js
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/js/cbpAnimatedHeader.js
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/js/responsiveslides.min.js
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/js/main.js
+[11/Sep/2016 21:02:22] WARNING [django.request:170] Not Found: /static/img/Flags/Flag_of_the_United_Kingdom.svg
+[11/Sep/2016 21:17:18] WARNING [django.request:170] Not Found: /
